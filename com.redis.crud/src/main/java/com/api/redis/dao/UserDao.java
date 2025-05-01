@@ -33,5 +33,6 @@ public class UserDao {
     //delete
     public void delete(String userId) {
         redisTemplate.opsForHash().delete(KEY, userId);
+        
     }
 }
